@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2 id="form-title">Iniciar Sesión</h2>
+            <div id="error-message" class="error"></div>
+            <form id="login-form">
+                <input 
+                    type="text" 
+                    id="username" 
+                    placeholder="Nombre de usuario" 
+                    required
+                >
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Contraseña" 
+                    required
+                >
+                <input 
+                    type="password" 
+                    id="confirm-password" 
+                    placeholder="Confirmar Contraseña" 
+                    style="display:none;"
+                >
+                <button type="submit" id="submit-btn">Iniciar Sesión</button>
+            </form>
+            <div class="form-footer">
+                <p id="toggle-form">
+                    ¿No tienes cuenta? Registrarse
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

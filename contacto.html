@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de libros en línea con búsqueda y favoritos">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><h2>LibroVerse</h2></div>
+        <div class="auth-container">
+            <div id="welcome-container"></div>
+            <div id="login-button-container"></div>
+            <div id="logout-button-container"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="images/home.png" alt="Inicio" class="nav-icon"></a></li>
+                <li><a href="libros.html"><img src="images/book.png" alt="Libros" class="nav-icon"></a></li>
+                <li><a href="favoritos.html"><img src="images/heart.png" alt="Favoritos" class="nav-icon"></a></li>
+                <li><a href="contacto.html"><img src="images/question.png" alt="Dudas" class="nav-icon"></a></li>
+            </ul>
+        </nav>
+
+        <div class="cart-container">
+            <div class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+            <div class="cart-dropdown" id="cart-dropdown">
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    Total: $<span id="cart-total-price">0.00</span>
+                </div>
+                <button id="checkout-btn">Completar Compra</button>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <section id="contacto">
+            <h2 >Contacto</h2>
+            <p>Si tienes alguna duda, no dudes en contactarnos.</p>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Métodos de Pago</h3>
+                <div class="payment-methods">
+                    <img src="/images/visa.png" alt="Visa" class="payment-icon">
+                    <img src="/images/mastercard.png" alt="Mastercard" class="payment-icon">
+                    <img src="/images/paypal.png" alt="PayPal" class="payment-icon">
+                    <img src="/images/american-express.png" alt="American Express" class="payment-icon">
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Síguenos en Redes</h3>
+                <div class="social-media">
+                    <a href="https://facebook.com/libroverse" target="_blank">
+                        <img src="/images/facebook.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://instagram.com/libroverse" target="_blank">
+                        <img src="/images/instagram.jpg" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://twitter.com/libroverse" target="_blank">
+                        <img src="/images/twitter.png" alt="Twitter" class="social-icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Atención al Cliente</h3>
+                <a href="/contacto.html" class="complaints-book">
+                    Libro de Reclamaciones
+                </a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 LibroVerse. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
